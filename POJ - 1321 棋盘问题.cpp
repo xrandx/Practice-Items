@@ -6,17 +6,6 @@ int n, k;
 long long ans;
 int vis[maxn];
 
-int count()
-{
-	int cnt = 0;
-	for(int i = 1; i <= n; i++)
-	{
-		if(vis[i] == 1)
-			cnt++;
-	}
-	return cnt;
-}
-
 void dfs(int p, int cnt)
 {
 	if(cnt == 0) 
